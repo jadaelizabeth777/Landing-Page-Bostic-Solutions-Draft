@@ -1,94 +1,7 @@
-# Bostic Solutions Landing Page
-
-A modern, responsive landing page for Bostic Solutions tech support and digital media services.
-
-## 📁 Project Structure
-
-```
-/
-├── index.html          # Main landing page
-├── README.md          # This file
-├── .gitignore         # Git ignore rules
-└── .git/              # Git repository
-```
-
-## 🚀 Quick Start
-
-1. **Open the page**: Open `index.html` in your browser to view the landing page
-2. **Customize content**: Edit the text, services, pricing, and contact info in `index.html`
-3. **Set up the form**: 
-   - Create a free form at [Formspree.io](https://formspree.io)
-   - Replace `yourFormID` in the form action with your actual form ID
-
-## 📝 What to Customize
-
-- **Contact Info**: Update email and phone in the contact section
-- **Pricing**: Adjust prices and service descriptions
-- **Services**: Modify the three main services offered
-- **Testimonials**: Replace placeholder quotes with real client feedback
-- **Branding**: Update colors in the CSS `:root` variables
-- **City/Service Area**: Update the "Remote • Local" text with your location
-
-## 🎨 Features
-
-- ✨ Dark mode with light mode toggle
-- 📱 Fully responsive design (mobile, tablet, desktop)
-- 🎯 One-page design with smooth navigation
-- 💌 Built-in inquiry form integration
-- 🔥 Modern gradient backgrounds
-- ⚡ No dependencies - pure HTML/CSS/JavaScript
-
-## 📋 Sections
-
-1. **Hero** - Main headline with call-to-action and quick snapshot
-2. **Services** - Three main offerings (IT Support, Remote Assistance, Digital Media)
-3. **Pricing** - Three service packages with pricing
-4. **Reviews** - Client testimonials
-5. **FAQ** - Common questions and answers
-6. **Contact** - Inquiry form and contact details
-
-## 🛠️ Technical Details
-
-- **HTML5** with semantic structure
-- **CSS3** with CSS variables for easy theming
-- **Vanilla JavaScript** for interactivity (no frameworks needed)
-- **Responsive** with mobile-first approach
-- **Accessible** with proper ARIA labels and semantic HTML
-
-## 📧 Form Setup
-
-To make the contact form work:
-
-1. Go to [formspree.io](https://formspree.io)
-2. Create a new form and get your form ID
-3. In `index.html`, find the line: `action="https://formspree.io/f/yourFormID"`
-4. Replace `yourFormID` with your actual form ID
-5. Save and test the form
-
-## 🌐 Deployment
-
-This is a static website - you can host it anywhere:
-- GitHub Pages
-- Netlify
-- Vercel
-- Traditional web hosting
-- Simply upload `index.html` to any web server
-
-## 💡 Tips
-
-- The logo is a CSS gradient - customize it in the `.logo` class
-- Colors are defined in `:root` CSS variables - change them for your brand
-- The page is mobile-responsive but test across devices
-- Keep the form ID private if hosting publicly
-- Consider adding analytics (Google Analytics, etc.)
-
-## 📄 License
-
-Free to use and modify for your business.
-
----
-
-Made with 💖 for Bostic Solutions
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bostic Solutions — Tech Support & Digital Media</title>
   <meta name="description" content="Fast, friendly tech support and digital media services. Book a consult or send an inquiry in minutes." />
@@ -102,7 +15,7 @@ Made with 💖 for Bostic Solutions
       --muted: rgba(255,255,255,.68);
       --line: rgba(255,255,255,.14);
       --accent: #ff4fd8;     /* pink */
-      --accent2:#8a5cff;     /* purple */
+      --accent2:#ff1493;     /* hot pink */
       --good:#43f1b3;
       --shadow: 0 16px 40px rgba(0,0,0,.45);
       --radius: 18px;
@@ -117,7 +30,7 @@ Made with 💖 for Bostic Solutions
       color:var(--text);
       background:
         radial-gradient(900px 600px at 10% 10%, rgba(255,79,216,.22), transparent 60%),
-        radial-gradient(900px 600px at 90% 20%, rgba(138,92,255,.18), transparent 55%),
+        radial-gradient(900px 600px at 90% 20%, rgba(255,20,147,.18), transparent 55%),
         radial-gradient(800px 550px at 50% 90%, rgba(67,241,179,.10), transparent 55%),
         var(--bg);
       line-height:1.55;
@@ -450,7 +363,7 @@ Made with 💖 for Bostic Solutions
               <div class="lbl">Inquiry → Plan → Done</div>
             </div>
           </div>
-          <div class="note">⭐ Tip: Replace this text with your exact services and city (or “Remote”).</div>
+          <div class="note">⭐ Tip: Replace this text with your exact services and city (or "Remote").</div>
         </aside>
       </div>
     </section>
@@ -460,7 +373,7 @@ Made with 💖 for Bostic Solutions
       <div class="container">
         <div class="section-title">
           <h2>Services</h2>
-          <p>Pick what you need. If you’re not sure, send an inquiry and I’ll recommend the best option.</p>
+          <p>Pick what you need. If you're not sure, send an inquiry and I'll recommend the best option.</p>
         </div>
 
         <div class="cards3">
@@ -477,7 +390,7 @@ Made with 💖 for Bostic Solutions
           <div class="tile">
             <div class="icon">📱</div>
             <h3>Digital Media</h3>
-            <p>Content planning, Canva templates, captions, brand visuals, and a clean “link in bio” setup.</p>
+            <p>Content planning, Canva templates, captions, brand visuals, and a clean "link in bio" setup.</p>
           </div>
         </div>
       </div>
@@ -488,7 +401,7 @@ Made with 💖 for Bostic Solutions
       <div class="container">
         <div class="section-title">
           <h2>Pricing</h2>
-          <p>Examples you can customize. Swap in your real prices + what’s included.</p>
+          <p>Examples you can customize. Swap in your real prices + what's included.</p>
         </div>
 
         <div class="pricing">
@@ -553,15 +466,15 @@ Made with 💖 for Bostic Solutions
 
         <div class="quotes">
           <div class="quote">
-            <p>“She explained everything in normal human language and fixed my laptop fast.”</p>
+            <p>"She explained everything in normal human language and fixed my laptop fast."</p>
             <div class="who">— Client Name</div>
           </div>
           <div class="quote">
-            <p>“My Wi-Fi and printer were a mess. Now everything works and I have a backup plan.”</p>
+            <p>"My Wi-Fi and printer were a mess. Now everything works and I have a backup plan."</p>
             <div class="who">— Client Name</div>
           </div>
           <div class="quote">
-            <p>“The Canva templates made my Instagram look so much more professional.”</p>
+            <p>"The Canva templates made my Instagram look so much more professional."</p>
             <div class="who">— Client Name</div>
           </div>
         </div>
@@ -591,7 +504,7 @@ Made with 💖 for Bostic Solutions
           </details>
           <details>
             <summary>Is this a booking form?</summary>
-            <p>Nope—this is an inquiry form. After you send it, I’ll confirm details and we’ll schedule from there.</p>
+            <p>Nope—this is an inquiry form. After you send it, I'll confirm details and we'll schedule from there.</p>
           </details>
         </div>
       </div>
@@ -602,7 +515,7 @@ Made with 💖 for Bostic Solutions
       <div class="container">
         <div class="section-title">
           <h2>Start an inquiry</h2>
-          <p>Fill this out and you’ll get a reply with next steps. (Swap the form action to your own endpoint.)</p>
+          <p>Fill this out and you'll get a reply with next steps. (Swap the form action to your own endpoint.)</p>
         </div>
 
         <div class="contact">
@@ -636,7 +549,7 @@ Made with 💖 for Bostic Solutions
             </div>
 
             <label for="message">What do you need help with?</label>
-            <textarea id="message" name="message" placeholder="Tell me what’s going on and any deadlines…"></textarea>
+            <textarea id="message" name="message" placeholder="Tell me what's going on and any deadlines…"></textarea>
 
             <div class="check">
               <input id="inquiryOnly" name="inquiry_only" type="checkbox" required />
@@ -653,7 +566,7 @@ Made with 💖 for Bostic Solutions
             </div>
 
             <p class="note">
-              ⚙️ To make this form work: create a free Formspree form, replace <b>yourFormID</b> in the action URL, and you’re set.
+              ⚙️ To make this form work: create a free Formspree form, replace <b>yourFormID</b> in the action URL, and you're set.
             </p>
           </form>
 
@@ -709,7 +622,7 @@ Made with 💖 for Bostic Solutions
     themeBtn.addEventListener("click", () => {
       light = !light;
       document.body.style.background = light
-        ? "radial-gradient(900px 600px at 10% 10%, rgba(255,79,216,.18), transparent 60%), radial-gradient(900px 600px at 90% 20%, rgba(138,92,255,.14), transparent 55%), #f7f7fb"
+        ? "radial-gradient(900px 600px at 10% 10%, rgba(255,79,216,.18), transparent 60%), radial-gradient(900px 600px at 90% 20%, rgba(255,20,147,.14), transparent 55%), #f7f7fb"
         : "";
       document.body.style.color = light ? "#0b0b10" : "";
       document.querySelectorAll(".card, details, .tile, .price-card, .quote, .mini").forEach(el=>{
